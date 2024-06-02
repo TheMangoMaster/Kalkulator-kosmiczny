@@ -12,7 +12,7 @@ function calculateAge() {
     var results = document.getElementById("results");
     results.innerHTML = "<h2>Twój wiek na różnych planetach:</h2>";
     for (var planet in planets) {
-        var planetAge = Math.round(age / planets[planet]["orbitalPeriod"]);
+        var planetAge = (age / planets[planet]["orbitalPeriod"]).toFixed(2);
         var planetName = planet.charAt(0).toUpperCase() + planet.slice(1);
         var lastChar = planetName.charAt(planetName.length - 1);
         var preposition = "Na ";
