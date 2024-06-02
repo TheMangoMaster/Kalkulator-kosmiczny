@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('space-background-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow-y: auto;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #ffdd57;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffdd57;
+}
+
+input[type="number"], button {
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(100% - 22px); /* Adjusting width to match both input and button */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff6f61, #d84315);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: calc(100% - 22px); /* Matching width with input field */
+}
+
+button:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+}
+
+#results {
+    margin-top: 30px;
+}
+
+.planet-info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #ffdd57;
+    transition: transform 0.3s ease;
+}
+
+.planet-info:hover {
+    transform: scale(1.05);
+}
+
+.planet-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planet-description {
+    width: 60%;
+    text-align: left;
+}
+
+.planet-description h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffdd57;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.planet-description p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffdd57;
+}
+
+.planet-facts {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.planet-facts h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffdd57;
+}
+
+.planet-facts p {
+    font-size: 16px;
+    color: #ffdd57;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .planet-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .planet-info img {
+        margin-bottom: 15px;
+    }
+
+    .planet-description {
+        width: 100%;
+    }
+}
